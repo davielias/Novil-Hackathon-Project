@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'gandhi_serifbold';
+    src: url('../fonts/web fonts/gandhiserif_bold_macroman/GandhiSerif-Bold-webfont.eot');
+    src: url('../fonts/web fonts/gandhiserif_bold_macroman/GandhiSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/web fonts/gandhiserif_bold_macroman/GandhiSerif-Bold-webfont.woff') format('woff'),
+         url('../fonts/web fonts/gandhiserif_bold_macroman/GandhiSerif-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/web fonts/gandhiserif_bold_macroman/GandhiSerif-Bold-webfont.svg#gandhi_serifbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gandhi_serifbold_italic';
+    src: url('../fonts/web fonts/gandhiserif_bolditalic_macroman/GandhiSerif-BoldItalic-webfont.eot');
+    src: url('../fonts/web fonts/gandhiserif_bolditalic_macroman/GandhiSerif-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/web fonts/gandhiserif_bolditalic_macroman/GandhiSerif-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/web fonts/gandhiserif_bolditalic_macroman/GandhiSerif-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/web fonts/gandhiserif_bolditalic_macroman/GandhiSerif-BoldItalic-webfont.svg#gandhi_serifbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gandhi_serifitalic';
+    src: url('../fonts/web fonts/gandhiserif_italic_macroman/GandhiSerif-Italic-webfont.eot');
+    src: url('../fonts/web fonts/gandhiserif_italic_macroman/GandhiSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/web fonts/gandhiserif_italic_macroman/GandhiSerif-Italic-webfont.woff') format('woff'),
+         url('../fonts/web fonts/gandhiserif_italic_macroman/GandhiSerif-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/web fonts/gandhiserif_italic_macroman/GandhiSerif-Italic-webfont.svg#gandhi_serifitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gandhi_serifregular';
+    src: url('../fonts/web fonts/gandhiserif_regular_macroman/GandhiSerif-Regular-webfont.eot');
+    src: url('../fonts/web fonts/gandhiserif_regular_macroman/GandhiSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/web fonts/gandhiserif_regular_macroman/GandhiSerif-Regular-webfont.woff') format('woff'),
+         url('../fonts/web fonts/gandhiserif_regular_macroman/GandhiSerif-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/web fonts/gandhiserif_regular_macroman/GandhiSerif-Regular-webfont.svg#gandhi_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'gandhi_serifbold';
+}
+
+h5 {
+    font-family: 'gandhi_serifregular';
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: auto;
+}
+
+#novelImage {
+    width: 100%;
+    height: auto;
+    border-bottom: none;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+#novelImage img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /*overflow y hidden
+    make image background of div and remove img tag*/
+}
+
+#fileDisplayArea {
+    font-family: 'gandhi_serifregular', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 40px;
+    width: 80%;
+    height: 60%;
+    padding: 10px;
+    background-color: #353535;
+    opacity: 0.85;
+    color: white;
+    text-align: left; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px 60px 60px 60px;
+}
+
+#fileDisplayArea p {
+    font-family: 'gandhi_serifitalic', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#page-nav {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 60px;
+}
+
+.btn-default {
+    background-color: #545454;
+    color: #000000;
+    border: none;
+}
+
+.btn-default:hover {
+    color: #000000;
+    border: none;
+}
+
+.line{
+    display:none;
+}
+
+.line.shown{
+    display:inline-block;
+}
+
+
+
+
+
+
+/*@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }	
+	50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }	
+	50% { -moz-transform: scale(1.1); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }	
+	50% { -o-transform: scale(1.1); }
+    100% { -o-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }	
+	50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+}*/
